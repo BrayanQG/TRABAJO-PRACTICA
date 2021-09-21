@@ -1,18 +1,21 @@
 body{
-    background:linear-gradient(top, rgb(210, 153, 221), rgb(172, 90, 197));
-    background:-webkit-linear-gradient(top, rgb(155, 93, 190), rgb(147, 61, 173));
-    background:-moz-linear-gradient(top, rgb(169, 130, 201), rgb(179, 98, 211));
-    background:-o-linear-gradient(top, rgb(163, 111, 187), rgb(142, 77, 172));
-    background:-ms-linear-gradient(top, rgb(181, 106, 204), rgb(143, 74, 175));
+background: #cb60b3; 
+background: -moz-linear-gradient(top,  #cb60b3 0%, #c146a1 56%, #a80077 85%, #db36a4 100%); 
+background: -webkit-linear-gradient(top,  #cb60b3 0%,#c146a1 56%,#a80077 85%,#db36a4 100%); 
+background: linear-gradient(to bottom,  #cb60b3 0%,#c146a1 56%,#a80077 85%,#db36a4 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4',GradientType=0 ); 
+
+
 }
 .body2{
-    margin: 50px;
+    margin: 100px;
     border: 1px solid #5c6552;
     background: rgb(95, 0, 133);
     padding: 350px;
     border-radius: 20px;
 }
 .tabla {
+    top: 400px;
     right: 10px;
     position: absolute;
     width: 100%;
@@ -20,29 +23,52 @@ body{
     text-align: center;
     padding-top: 50px;
 }
+.tablax3:hover{
+    animation: 1s ms 1;
+}
 
+@keyframes ms{
+  0%{
+      transform: scale(1.5);
+      opacity: 0;
+  }  
+}
 .tablax3 {
     float: left;
     width: 20%;
     margin-top: 20px;
 }
 .card{
-    border: 1px solid #5c6552;
+    border: 3px solid #5c6552;
     background: #fff;
-    padding: 20px;
+    padding: 15px;
     border-radius: 20px;
+}
+.card h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: #a80077;
 }
 .tabla-medio {
     float: left;
     width: 23%;
     margin-top: 10px;  
 }
+.tabla-medio:hover{
+    animation: 1s ms 1;
+}
+
+@keyframes ms{
+  0%{
+      transform: scale(1.0);
+      opacity: 0;
+  }  
+}
 
 .boton-precio{
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 .precio-1{
-    background: coral;
+    background: #a80077;
     text-decoration: none;
     color: cornsilk;
     text-transform: uppercase;
@@ -52,9 +78,8 @@ body{
     width: 90%;
 }
 .precio-1:hover{
-    background-color: darkgray;
+    background: #25041b;
 }
-
 .card-m{
     background-color: #fff;
     box-shadow: 0 0 8px rgba(0,0,0,0.9);
@@ -62,3 +87,14 @@ body{
     padding: 50px;
     border-radius: 20px;
 }
+.card-m h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: #a80077;
+}
+.imgRedonda {
+    width:100px;
+    height:100px;
+    border-radius:150px;
+    border: 1px solid #5c6552;
+}
+
